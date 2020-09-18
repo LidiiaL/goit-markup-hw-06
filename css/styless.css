@@ -211,7 +211,6 @@ transition: 500ms opasity linear;
 
 /*задаёт стили для секции герой*/
 .hero {
-  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -278,9 +277,10 @@ transition: 500ms opasity linear;
   padding-right: 40px;
 
   max-width: 528px;
-  max-height: 581px;
+  min-height: 581px;
   padding: 40px;
-  
+
+  font-size: 12px;
   border-radius: 4px;
   background-color: var(--main-white-color);
   transition: 250ms linear 250ms;
@@ -385,6 +385,13 @@ transition: 500ms opasity linear;
   outline-color: var(--accent-color);
 }
 
+.checkbox-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-left: 36px;
+}
+
 .form-field.checkbox {
  margin-left: auto;
  margin-right: auto;
@@ -409,6 +416,10 @@ transition: 500ms opasity linear;
   background-origin: border-box;
 }
 .icon-check {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -903,7 +914,7 @@ text-transform: uppercase;
 .subscribe-button {
   position: relative;
   position: absolute;
-  top: 66%;
+  top: 72%;
   right: 0;
   transform: translateY(-50%);
   width: 200px;

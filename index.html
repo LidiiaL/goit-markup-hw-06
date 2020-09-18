@@ -363,9 +363,9 @@
     </div> 
 
     <div class="footer-subscribe">
-      <span class="subscribe-title">Подпишитесь на рассылку</span>
       <form action="./mail.php" method="POST" class="footer-form">                <!--id="form"-->
         <label>
+          <span class="subscribe-title">Подпишитесь на рассылку</span>
          <input class="footer-email" type="email" name="user-email" placeholder="E-mail">
         </label>
        <button class="subscribe-button" type="submit"><span class="subscribe-call">Подписаться</span>
@@ -424,13 +424,13 @@
              <svg class="icon-input"><use href=". /images/icon/sprite.svg#person"></use></svg>
             </label>
            
-
+          <div class="checkbox-box">
            <label class="form-field checkbox">
             <input type="checkbox" name="checkbox" class="form-checkbox">
             <span class="icon-check"> <!--svg--> </span>
              <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="" class="link-chekbox">Условия договора</a></span>
             </label>
-           
+          </div>
             <button class="send-modal-button" type="submit">Отправить</button>
 
           </form>
